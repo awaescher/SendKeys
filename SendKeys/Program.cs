@@ -43,7 +43,7 @@ namespace SendKeys
 					}
 					else if (waitIndex > -1)
 					{
-						var waitString = args[i].Substring(waitIndex + "pid:".Length);
+						var waitString = args[i].Substring(waitIndex + "wait:".Length);
 						int.TryParse(waitString, out wait);
 					}
 					else
